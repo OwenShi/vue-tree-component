@@ -5,17 +5,25 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
+# 安装相关依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 启动项目
 npm run dev
 
-# build for production with minification
-npm run build
+# 参数说明
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+  // displayMode
+  true => 不显示 disabled 为 true 的节点及子节点
+  false => disabled 为 true 的节点及子节点置灰
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+  // treeData
+  树形结构数据, 其中
+  disabled => Boolean
+  child => Array
+
+  // selectTreeItem
+  Function(param)
+  param => 当前节点TreeData的所有数据
+
+
